@@ -1,133 +1,1442 @@
 [
   {
-    "name": "Arrays & Hashing",
-    "color": "#6e5ff5",
-    "problems": [
-      { "id": 1, "name": "Two Sum", "diff": "Easy", "slug": "two-sum" },
-      { "id": 217, "name": "Contains Duplicate", "diff": "Easy", "slug": "contains-duplicate" },
-      { "id": 242, "name": "Valid Anagram", "diff": "Easy", "slug": "valid-anagram" },
-      { "id": 49, "name": "Group Anagrams", "diff": "Medium", "slug": "group-anagrams" },
-      { "id": 347, "name": "Top K Frequent Elements", "diff": "Medium", "slug": "top-k-frequent-elements" },
-      { "id": 238, "name": "Product of Array Except Self", "diff": "Medium", "slug": "product-of-array-except-self" },
-      { "id": 36, "name": "Valid Sudoku", "diff": "Medium", "slug": "valid-sudoku" },
-      { "id": 128, "name": "Longest Consecutive Sequence", "diff": "Medium", "slug": "longest-consecutive-sequence" }
-    ]
-  },
-  {
-    "name": "Two Pointers",
-    "color": "#ff5fa0",
-    "problems": [
-      { "id": 125, "name": "Valid Palindrome", "diff": "Easy", "slug": "valid-palindrome" },
-      { "id": 167, "name": "Two Sum II", "diff": "Medium", "slug": "two-sum-ii-input-array-is-sorted" },
-      { "id": 15, "name": "3Sum", "diff": "Medium", "slug": "3sum" },
-      { "id": 11, "name": "Container With Most Water", "diff": "Medium", "slug": "container-with-most-water" },
-      { "id": 42, "name": "Trapping Rain Water", "diff": "Hard", "slug": "trapping-rain-water" }
-    ]
-  },
-  {
-    "name": "Sliding Window",
-    "color": "#00c8ff",
-    "problems": [
-      { "id": 121, "name": "Best Time to Buy and Sell Stock", "diff": "Easy", "slug": "best-time-to-buy-and-sell-stock" },
-      { "id": 3, "name": "Longest Substring Without Repeating Characters", "diff": "Medium", "slug": "longest-substring-without-repeating-characters" },
-      { "id": 424, "name": "Longest Repeating Character Replacement", "diff": "Medium", "slug": "longest-repeating-character-replacement" },
-      { "id": 567, "name": "Permutation in String", "diff": "Medium", "slug": "permutation-in-string" },
-      { "id": 76, "name": "Minimum Window Substring", "diff": "Hard", "slug": "minimum-window-substring" },
-      { "id": 239, "name": "Sliding Window Maximum", "diff": "Hard", "slug": "sliding-window-maximum" }
-    ]
-  },
-  {
-    "name": "Stack",
-    "color": "#ffaa00",
-    "problems": [
-      { "id": 20, "name": "Valid Parentheses", "diff": "Easy", "slug": "valid-parentheses" },
-      { "id": 155, "name": "Min Stack", "diff": "Medium", "slug": "min-stack" },
-      { "id": 150, "name": "Evaluate Reverse Polish Notation", "diff": "Medium", "slug": "evaluate-reverse-polish-notation" },
-      { "id": 22, "name": "Generate Parentheses", "diff": "Medium", "slug": "generate-parentheses" },
-      { "id": 739, "name": "Daily Temperatures", "diff": "Medium", "slug": "daily-temperatures" },
-      { "id": 853, "name": "Car Fleet", "diff": "Medium", "slug": "car-fleet" },
-      { "id": 84, "name": "Largest Rectangle in Histogram", "diff": "Hard", "slug": "largest-rectangle-in-histogram" }
-    ]
-  },
-  {
-    "name": "Binary Search",
-    "color": "#00e5a0",
-    "problems": [
-      { "id": 704, "name": "Binary Search", "diff": "Easy", "slug": "binary-search" },
-      { "id": 74, "name": "Search a 2D Matrix", "diff": "Medium", "slug": "search-a-2d-matrix" },
-      { "id": 875, "name": "Koko Eating Bananas", "diff": "Medium", "slug": "koko-eating-bananas" },
-      { "id": 153, "name": "Find Minimum in Rotated Sorted Array", "diff": "Medium", "slug": "find-minimum-in-rotated-sorted-array" },
-      { "id": 33, "name": "Search in Rotated Sorted Array", "diff": "Medium", "slug": "search-in-rotated-sorted-array" },
-      { "id": 981, "name": "Time Based Key-Value Store", "diff": "Medium", "slug": "time-based-key-value-store" },
-      { "id": 4, "name": "Median of Two Sorted Arrays", "diff": "Hard", "slug": "median-of-two-sorted-arrays" }
-    ]
-  },
-  {
     "name": "Linked List",
     "color": "#6e5ff5",
     "problems": [
-      { "id": 206, "name": "Reverse Linked List", "diff": "Easy", "slug": "reverse-linked-list" },
-      { "id": 21, "name": "Merge Two Sorted Lists", "diff": "Easy", "slug": "merge-two-sorted-lists" },
-      { "id": 141, "name": "Linked List Cycle", "diff": "Easy", "slug": "linked-list-cycle" },
-      { "id": 143, "name": "Reorder List", "diff": "Medium", "slug": "reorder-list" },
-      { "id": 19, "name": "Remove Nth Node From End of List", "diff": "Medium", "slug": "remove-nth-node-from-end-of-list" },
-      { "id": 138, "name": "Copy List with Random Pointer", "diff": "Medium", "slug": "copy-list-with-random-pointer" },
-      { "id": 2, "name": "Add Two Numbers", "diff": "Medium", "slug": "add-two-numbers" },
-      { "id": 287, "name": "Find the Duplicate Number", "diff": "Medium", "slug": "find-the-duplicate-number" },
-      { "id": 146, "name": "LRU Cache", "diff": "Medium", "slug": "lru-cache" },
-      { "id": 23, "name": "Merge k Sorted Lists", "diff": "Hard", "slug": "merge-k-sorted-lists" },
-      { "id": 25, "name": "Reverse Nodes in k-Group", "diff": "Hard", "slug": "reverse-nodes-in-k-group" }
+      {
+        "id": 23,
+        "name": "Merge k Sorted Lists",
+        "diff": "Hard",
+        "slug": "merge-k-sorted-lists"
+      },
+      {
+        "id": 148,
+        "name": "Sort List",
+        "diff": "Medium",
+        "slug": "sort-list"
+      },
+      {
+        "id": 876,
+        "name": "Middle of Linked List",
+        "diff": "Easy",
+        "slug": "middle-of-the-linked-list"
+      },
+      {
+        "id": 142,
+        "name": "Linked List Cycle II",
+        "diff": "Medium",
+        "slug": "linked-list-cycle-ii"
+      },
+      {
+        "id": 25,
+        "name": "Reverse Nodes in k-Group",
+        "diff": "Hard",
+        "slug": "reverse-nodes-in-k-group"
+      },
+      {
+        "id": 160,
+        "name": "Intersection of Two Lists",
+        "diff": "Easy",
+        "slug": "intersection-of-two-linked-lists"
+      },
+      {
+        "id": 143,
+        "name": "Reorder List",
+        "diff": "Medium",
+        "slug": "reorder-list"
+      },
+      {
+        "id": 24,
+        "name": "Swap Nodes in Pairs",
+        "diff": "Medium",
+        "slug": "swap-nodes-in-pairs"
+      },
+      {
+        "id": 21,
+        "name": "Merge Two Sorted Lists",
+        "diff": "Easy",
+        "slug": "merge-two-sorted-lists"
+      },
+      {
+        "id": 206,
+        "name": "Reverse Linked List",
+        "diff": "Easy",
+        "slug": "reverse-linked-list"
+      },
+      {
+        "id": 92,
+        "name": "Reverse Linked List II",
+        "diff": "Medium",
+        "slug": "reverse-linked-list-ii"
+      },
+      {
+        "id": 817,
+        "name": "Linked List Components",
+        "diff": "Medium",
+        "slug": "linked-list-components"
+      },
+      {
+        "id": 234,
+        "name": "Palindrome Linked List",
+        "diff": "Easy",
+        "slug": "palindrome-linked-list"
+      },
+      {
+        "id": 1669,
+        "name": "Merge In Between",
+        "diff": "Medium",
+        "slug": "merge-in-between-linked-lists"
+      },
+      {
+        "id": 19,
+        "name": "Remove Nth From End",
+        "diff": "Medium",
+        "slug": "remove-nth-node-from-end-of-list"
+      },
+      {
+        "id": 141,
+        "name": "Linked List Cycle",
+        "diff": "Easy",
+        "slug": "linked-list-cycle"
+      },
+      {
+        "id": 2,
+        "name": "Add Two Numbers",
+        "diff": "Medium",
+        "slug": "add-two-numbers"
+      }
     ]
   },
   {
     "name": "Trees",
-    "color": "#ff5fa0",
+    "color": "#00e5a0",
     "problems": [
-      { "id": 226, "name": "Invert Binary Tree", "diff": "Easy", "slug": "invert-binary-tree" },
-      { "id": 104, "name": "Maximum Depth of Binary Tree", "diff": "Easy", "slug": "maximum-depth-of-binary-tree" },
-      { "id": 543, "name": "Diameter of Binary Tree", "diff": "Easy", "slug": "diameter-of-binary-tree" },
-      { "id": 110, "name": "Balanced Binary Tree", "diff": "Easy", "slug": "balanced-binary-tree" },
-      { "id": 100, "name": "Same Tree", "diff": "Easy", "slug": "same-tree" },
-      { "id": 572, "name": "Subtree of Another Tree", "diff": "Easy", "slug": "subtree-of-another-tree" },
-      { "id": 235, "name": "Lowest Common Ancestor of a BST", "diff": "Easy", "slug": "lowest-common-ancestor-of-a-binary-search-tree" },
-      { "id": 102, "name": "Level Order Traversal", "diff": "Medium", "slug": "binary-tree-level-order-traversal" },
-      { "id": 199, "name": "Right Side View", "diff": "Medium", "slug": "binary-tree-right-side-view" },
-      { "id": 1448, "name": "Count Good Nodes in Binary Tree", "diff": "Medium", "slug": "count-good-nodes-in-binary-tree" },
-      { "id": 98, "name": "Validate Binary Search Tree", "diff": "Medium", "slug": "validate-binary-search-tree" },
-      { "id": 230, "name": "Kth Smallest Element in a BST", "diff": "Medium", "slug": "kth-smallest-element-in-a-bst" },
-      { "id": 105, "name": "Construct Tree from Preorder and Inorder", "diff": "Medium", "slug": "construct-binary-tree-from-preorder-and-inorder-traversal" },
-      { "id": 124, "name": "Binary Tree Maximum Path Sum", "diff": "Hard", "slug": "binary-tree-maximum-path-sum" },
-      { "id": 297, "name": "Serialize and Deserialize Binary Tree", "diff": "Hard", "slug": "serialize-and-deserialize-binary-tree" }
+      {
+        "id": 199,
+        "name": "Binary Tree Right Side View",
+        "diff": "Medium",
+        "slug": "binary-tree-right-side-view"
+      },
+      {
+        "id": 116,
+        "name": "Populating Next Right Pointers",
+        "diff": "Medium",
+        "slug": "populating-next-right-pointers-in-each-node"
+      },
+      {
+        "id": 117,
+        "name": "Populating Next Right Pointers II",
+        "diff": "Medium",
+        "slug": "populating-next-right-pointers-in-each-node-ii"
+      },
+      {
+        "id": 102,
+        "name": "Level Order Traversal",
+        "diff": "Medium",
+        "slug": "binary-tree-level-order-traversal"
+      },
+      {
+        "id": 114,
+        "name": "Flatten to Linked List",
+        "diff": "Medium",
+        "slug": "flatten-binary-tree-to-linked-list"
+      },
+      {
+        "id": 94,
+        "name": "Inorder Traversal",
+        "diff": "Easy",
+        "slug": "binary-tree-inorder-traversal"
+      },
+      {
+        "id": 337,
+        "name": "House Robber III",
+        "diff": "Medium",
+        "slug": "house-robber-iii"
+      },
+      {
+        "id": 110,
+        "name": "Balanced Binary Tree",
+        "diff": "Easy",
+        "slug": "balanced-binary-tree"
+      },
+      {
+        "id": 993,
+        "name": "Cousins in Binary Tree",
+        "diff": "Easy",
+        "slug": "cousins-in-binary-tree"
+      },
+      {
+        "id": 226,
+        "name": "Invert Binary Tree",
+        "diff": "Easy",
+        "slug": "invert-binary-tree"
+      },
+      {
+        "id": 572,
+        "name": "Subtree of Another Tree",
+        "diff": "Easy",
+        "slug": "subtree-of-another-tree"
+      },
+      {
+        "id": 543,
+        "name": "Diameter of Binary Tree",
+        "diff": "Easy",
+        "slug": "diameter-of-binary-tree"
+      },
+      {
+        "id": 104,
+        "name": "Max Depth Binary Tree",
+        "diff": "Easy",
+        "slug": "maximum-depth-of-binary-tree"
+      },
+      {
+        "id": 101,
+        "name": "Symmetric Tree",
+        "diff": "Easy",
+        "slug": "symmetric-tree"
+      },
+      {
+        "id": 100,
+        "name": "Same Tree",
+        "diff": "Easy",
+        "slug": "same-tree"
+      },
+      {
+        "id": 404,
+        "name": "Sum of Left Leaves",
+        "diff": "Easy",
+        "slug": "sum-of-left-leaves"
+      },
+      {
+        "id": 113,
+        "name": "Path Sum II",
+        "diff": "Medium",
+        "slug": "path-sum-ii"
+      },
+      {
+        "id": 112,
+        "name": "Path Sum",
+        "diff": "Easy",
+        "slug": "path-sum"
+      },
+      {
+        "id": 108,
+        "name": "Sorted Array to BST",
+        "diff": "Easy",
+        "slug": "convert-sorted-array-to-binary-search-tree"
+      },
+      {
+        "id": 107,
+        "name": "Level Order II",
+        "diff": "Medium",
+        "slug": "binary-tree-level-order-traversal-ii"
+      },
+      {
+        "id": 106,
+        "name": "Build In+Postorder",
+        "diff": "Medium",
+        "slug": "construct-binary-tree-from-inorder-and-postorder-traversal"
+      },
+      {
+        "id": 105,
+        "name": "Build Pre+Inorder",
+        "diff": "Medium",
+        "slug": "construct-binary-tree-from-preorder-and-inorder-traversal"
+      },
+      {
+        "id": 103,
+        "name": "Zigzag Level Order",
+        "diff": "Medium",
+        "slug": "binary-tree-zigzag-level-order-traversal"
+      },
+      {
+        "id": 95,
+        "name": "Unique BSTs II",
+        "diff": "Medium",
+        "slug": "unique-binary-search-trees-ii"
+      }
     ]
   },
   {
-    "name": "Graphs",
+    "name": "BST",
     "color": "#00c8ff",
     "problems": [
-      { "id": 200, "name": "Number of Islands", "diff": "Medium", "slug": "number-of-islands" },
-      { "id": 133, "name": "Clone Graph", "diff": "Medium", "slug": "clone-graph" },
-      { "id": 695, "name": "Max Area of Island", "diff": "Medium", "slug": "max-area-of-island" },
-      { "id": 417, "name": "Pacific Atlantic Water Flow", "diff": "Medium", "slug": "pacific-atlantic-water-flow" },
-      { "id": 130, "name": "Surrounded Regions", "diff": "Medium", "slug": "surrounded-regions" },
-      { "id": 994, "name": "Rotting Oranges", "diff": "Medium", "slug": "rotting-oranges" },
-      { "id": 207, "name": "Course Schedule", "diff": "Medium", "slug": "course-schedule" },
-      { "id": 210, "name": "Course Schedule II", "diff": "Medium", "slug": "course-schedule-ii" },
-      { "id": 684, "name": "Redundant Connection", "diff": "Medium", "slug": "redundant-connection" },
-      { "id": 127, "name": "Word Ladder", "diff": "Hard", "slug": "word-ladder" }
+      {
+        "id": 98,
+        "name": "Validate BST",
+        "diff": "Medium",
+        "slug": "validate-binary-search-tree"
+      },
+      {
+        "id": 235,
+        "name": "LCA of BST",
+        "diff": "Medium",
+        "slug": "lowest-common-ancestor-of-a-binary-search-tree"
+      },
+      {
+        "id": 230,
+        "name": "Kth Smallest in BST",
+        "diff": "Medium",
+        "slug": "kth-smallest-element-in-a-bst"
+      }
     ]
   },
   {
     "name": "Dynamic Programming",
+    "color": "#ff5fa0",
+    "problems": [
+      {
+        "id": 3225,
+        "name": "Maximum Score Grid Ops",
+        "diff": "Hard",
+        "slug": "maximum-score-from-grid-operations"
+      },
+      {
+        "id": 118,
+        "name": "Pascal's Triangle",
+        "diff": "Easy",
+        "slug": "pascals-triangle"
+      },
+      {
+        "id": 2915,
+        "name": "Length Longest Subseq Sum Target",
+        "diff": "Medium",
+        "slug": "length-of-the-longest-subsequence-that-sums-to-target"
+      },
+      {
+        "id": 494,
+        "name": "Target Sum",
+        "diff": "Medium",
+        "slug": "target-sum"
+      },
+      {
+        "id": 416,
+        "name": "Partition Equal Subset",
+        "diff": "Medium",
+        "slug": "partition-equal-subset-sum"
+      },
+      {
+        "id": 1049,
+        "name": "Last Stone Weight II",
+        "diff": "Medium",
+        "slug": "last-stone-weight-ii"
+      },
+      {
+        "id": 279,
+        "name": "Perfect Squares",
+        "diff": "Medium",
+        "slug": "perfect-squares"
+      },
+      {
+        "id": 931,
+        "name": "Min Falling Path Sum",
+        "diff": "Medium",
+        "slug": "minimum-falling-path-sum"
+      },
+      {
+        "id": 2218,
+        "name": "Max Value K Coins",
+        "diff": "Hard",
+        "slug": "maximum-value-of-k-coins-from-piles"
+      },
+      {
+        "id": 983,
+        "name": "Min Cost For Tickets",
+        "diff": "Medium",
+        "slug": "minimum-cost-for-tickets"
+      },
+      {
+        "id": 322,
+        "name": "Coin Change",
+        "diff": "Medium",
+        "slug": "coin-change"
+      },
+      {
+        "id": 740,
+        "name": "Delete and Earn",
+        "diff": "Medium",
+        "slug": "delete-and-earn"
+      },
+      {
+        "id": 198,
+        "name": "House Robber",
+        "diff": "Medium",
+        "slug": "house-robber"
+      },
+      {
+        "id": 518,
+        "name": "Coin Change II",
+        "diff": "Medium",
+        "slug": "coin-change-ii"
+      },
+      {
+        "id": 2585,
+        "name": "Ways to Earn Points",
+        "diff": "Hard",
+        "slug": "number-of-ways-to-earn-points"
+      },
+      {
+        "id": 2463,
+        "name": "Min Total Distance",
+        "diff": "Hard",
+        "slug": "minimum-total-distance-traveled"
+      },
+      {
+        "id": 213,
+        "name": "House Robber II",
+        "diff": "Medium",
+        "slug": "house-robber-ii"
+      },
+      {
+        "id": 70,
+        "name": "Climbing Stairs",
+        "diff": "Easy",
+        "slug": "climbing-stairs"
+      },
+      {
+        "id": 1320,
+        "name": "Min Distance Two Fingers",
+        "diff": "Hard",
+        "slug": "minimum-distance-to-type-a-word-using-two-fingers"
+      },
+      {
+        "id": 714,
+        "name": "Best Time Stock + Fee",
+        "diff": "Medium",
+        "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee"
+      },
+      {
+        "id": 1594,
+        "name": "Max Non-Neg Product Matrix",
+        "diff": "Medium",
+        "slug": "maximum-non-negative-product-in-a-matrix"
+      },
+      {
+        "id": 3418,
+        "name": "Max Money Robot Earn",
+        "diff": "Medium",
+        "slug": "maximum-amount-of-money-robot-can-earn"
+      },
+      {
+        "id": 410,
+        "name": "Split Array Largest Sum",
+        "diff": "Hard",
+        "slug": "split-array-largest-sum"
+      },
+      {
+        "id": 152,
+        "name": "Max Product Subarray",
+        "diff": "Medium",
+        "slug": "maximum-product-subarray"
+      },
+      {
+        "id": 53,
+        "name": "Maximum Subarray",
+        "diff": "Medium",
+        "slug": "maximum-subarray"
+      }
+    ]
+  },
+  {
+    "name": "Binary Search",
+    "color": "#a29bfe",
+    "problems": [
+      {
+        "id": 34,
+        "name": "First and Last Position",
+        "diff": "Medium",
+        "slug": "find-first-and-last-position-of-element-in-sorted-array"
+      },
+      {
+        "id": 2064,
+        "name": "Minimized Max Products",
+        "diff": "Medium",
+        "slug": "minimized-maximum-of-products-distributed-to-any-store"
+      },
+      {
+        "id": 1552,
+        "name": "Magnetic Force Balls",
+        "diff": "Medium",
+        "slug": "magnetic-force-between-two-balls"
+      },
+      {
+        "id": 1855,
+        "name": "Max Distance Pair",
+        "diff": "Medium",
+        "slug": "maximum-distance-between-a-pair-of-values"
+      },
+      {
+        "id": 1011,
+        "name": "Capacity Ship Packages",
+        "diff": "Medium",
+        "slug": "capacity-to-ship-packages-within-d-days"
+      },
+      {
+        "id": 1482,
+        "name": "Min Days Bouquets",
+        "diff": "Medium",
+        "slug": "minimum-number-of-days-to-make-m-bouquets"
+      },
+      {
+        "id": 875,
+        "name": "Koko Eating Bananas",
+        "diff": "Medium",
+        "slug": "koko-eating-bananas"
+      },
+      {
+        "id": 2560,
+        "name": "House Robber IV",
+        "diff": "Medium",
+        "slug": "house-robber-iv"
+      },
+      {
+        "id": 1539,
+        "name": "Kth Missing Positive",
+        "diff": "Easy",
+        "slug": "kth-missing-positive-number"
+      },
+      {
+        "id": 33,
+        "name": "Search Rotated Array",
+        "diff": "Medium",
+        "slug": "search-in-rotated-sorted-array"
+      },
+      {
+        "id": 74,
+        "name": "Search 2D Matrix",
+        "diff": "Medium",
+        "slug": "search-a-2d-matrix"
+      },
+      {
+        "id": 153,
+        "name": "Min in Rotated Array",
+        "diff": "Medium",
+        "slug": "find-minimum-in-rotated-sorted-array"
+      },
+      {
+        "id": 35,
+        "name": "Search Insert Position",
+        "diff": "Easy",
+        "slug": "search-insert-position"
+      },
+      {
+        "id": 744,
+        "name": "Smallest Letter > Target",
+        "diff": "Easy",
+        "slug": "find-smallest-letter-greater-than-target"
+      },
+      {
+        "id": 69,
+        "name": "Sqrt(x)",
+        "diff": "Easy",
+        "slug": "sqrtx"
+      }
+    ]
+  },
+  {
+    "name": "Sliding Window",
+    "color": "#ffaa00",
+    "problems": [
+      {
+        "id": 76,
+        "name": "Minimum Window Substring",
+        "diff": "Hard",
+        "slug": "minimum-window-substring"
+      },
+      {
+        "id": 3,
+        "name": "Longest Substring No Repeat",
+        "diff": "Medium",
+        "slug": "longest-substring-without-repeating-characters"
+      },
+      {
+        "id": 643,
+        "name": "Max Average Subarray I",
+        "diff": "Easy",
+        "slug": "maximum-average-subarray-i"
+      },
+      {
+        "id": 219,
+        "name": "Contains Duplicate II",
+        "diff": "Easy",
+        "slug": "contains-duplicate-ii"
+      },
+      {
+        "id": 209,
+        "name": "Min Size Subarray Sum",
+        "diff": "Medium",
+        "slug": "minimum-size-subarray-sum"
+      },
+      {
+        "id": 220,
+        "name": "Contains Duplicate III",
+        "diff": "Hard",
+        "slug": "contains-duplicate-iii"
+      }
+    ]
+  },
+  {
+    "name": "Two Pointers",
     "color": "#ff3d5a",
     "problems": [
-      { "id": 70, "name": "Climbing Stairs", "diff": "Easy", "slug": "climbing-stairs" },
-      { "id": 198, "name": "House Robber", "diff": "Medium", "slug": "house-robber" },
-      { "id": 213, "name": "House Robber II", "diff": "Medium", "slug": "house-robber-ii" },
-      { "id": 5, "name": "Longest Palindromic Substring", "diff": "Medium", "slug": "longest-palindromic-substring" },
-      { "id": 322, "name": "Coin Change", "diff": "Medium", "slug": "coin-change" },
-      { "id": 300, "name": "Longest Increasing Subsequence", "diff": "Medium", "slug": "longest-increasing-subsequence" },
-      { "id": 1143, "name": "Longest Common Subsequence", "diff": "Medium", "slug": "longest-common-subsequence" },
-      { "id": 72, "name": "Edit Distance", "diff": "Hard", "slug": "edit-distance" }
+      {
+        "id": 392,
+        "name": "Is Subsequence",
+        "diff": "Easy",
+        "slug": "is-subsequence"
+      },
+      {
+        "id": 26,
+        "name": "Remove Duplicates Sorted",
+        "diff": "Easy",
+        "slug": "remove-duplicates-from-sorted-array"
+      },
+      {
+        "id": 11,
+        "name": "Container With Most Water",
+        "diff": "Medium",
+        "slug": "container-with-most-water"
+      },
+      {
+        "id": 15,
+        "name": "3Sum",
+        "diff": "Medium",
+        "slug": "3sum"
+      },
+      {
+        "id": 977,
+        "name": "Squares of Sorted Array",
+        "diff": "Easy",
+        "slug": "squares-of-a-sorted-array"
+      },
+      {
+        "id": 75,
+        "name": "Sort Colors",
+        "diff": "Medium",
+        "slug": "sort-colors"
+      },
+      {
+        "id": 42,
+        "name": "Trapping Rain Water",
+        "diff": "Hard",
+        "slug": "trapping-rain-water"
+      },
+      {
+        "id": 167,
+        "name": "Two Sum II",
+        "diff": "Medium",
+        "slug": "two-sum-ii-input-array-is-sorted"
+      }
+    ]
+  },
+  {
+    "name": "Arrays & Prefix Sum",
+    "color": "#74b9ff",
+    "problems": [
+      {
+        "id": 532,
+        "name": "K-diff Pairs in Array",
+        "diff": "Medium",
+        "slug": "k-diff-pairs-in-an-array"
+      },
+      {
+        "id": 88,
+        "name": "Merge Sorted Array",
+        "diff": "Easy",
+        "slug": "merge-sorted-array"
+      },
+      {
+        "id": 2615,
+        "name": "Sum of Distances",
+        "diff": "Medium",
+        "slug": "sum-of-distances"
+      },
+      {
+        "id": 238,
+        "name": "Product Except Self",
+        "diff": "Medium",
+        "slug": "product-of-array-except-self"
+      },
+      {
+        "id": 2078,
+        "name": "Two Furthest Houses Diff Colors",
+        "diff": "Easy",
+        "slug": "two-furthest-houses-with-different-colors"
+      },
+      {
+        "id": 525,
+        "name": "Contiguous Array",
+        "diff": "Medium",
+        "slug": "contiguous-array"
+      },
+      {
+        "id": 3488,
+        "name": "Closest Equal Element Queries",
+        "diff": "Medium",
+        "slug": "closest-equal-element-queries"
+      },
+      {
+        "id": 2515,
+        "name": "Shortest Distance Target String",
+        "diff": "Easy",
+        "slug": "shortest-distance-to-target-string-in-a-circular-array"
+      },
+      {
+        "id": 1848,
+        "name": "Min Distance to Target Element",
+        "diff": "Easy",
+        "slug": "minimum-distance-to-the-target-element"
+      },
+      {
+        "id": 3741,
+        "name": "Min Distance Three Equal II",
+        "diff": "Medium",
+        "slug": "minimum-distance-between-three-equal-elements-ii"
+      },
+      {
+        "id": 3740,
+        "name": "Min Distance Three Equal I",
+        "diff": "Easy",
+        "slug": "minimum-distance-between-three-equal-elements-i"
+      },
+      {
+        "id": 1929,
+        "name": "Concatenation of Array",
+        "diff": "Easy",
+        "slug": "concatenation-of-array"
+      },
+      {
+        "id": 3010,
+        "name": "Divide Array Min Cost I",
+        "diff": "Easy",
+        "slug": "divide-an-array-into-subarrays-with-minimum-cost-i"
+      },
+      {
+        "id": 128,
+        "name": "Longest Consecutive Seq",
+        "diff": "Medium",
+        "slug": "longest-consecutive-sequence"
+      },
+      {
+        "id": 485,
+        "name": "Max Consecutive Ones",
+        "diff": "Easy",
+        "slug": "max-consecutive-ones"
+      },
+      {
+        "id": 121,
+        "name": "Best Time Buy/Sell Stock",
+        "diff": "Easy",
+        "slug": "best-time-to-buy-and-sell-stock"
+      },
+      {
+        "id": 448,
+        "name": "Find Disappeared Numbers",
+        "diff": "Easy",
+        "slug": "find-all-numbers-disappeared-in-an-array"
+      },
+      {
+        "id": 961,
+        "name": "N-Repeated Element in 2N Array",
+        "diff": "Easy",
+        "slug": "n-repeated-element-in-size-2n-array"
+      },
+      {
+        "id": 1,
+        "name": "Two Sum",
+        "diff": "Easy",
+        "slug": "two-sum"
+      },
+      {
+        "id": 217,
+        "name": "Contains Duplicate",
+        "diff": "Easy",
+        "slug": "contains-duplicate"
+      },
+      {
+        "id": 560,
+        "name": "Subarray Sum Equals K",
+        "diff": "Medium",
+        "slug": "subarray-sum-equals-k"
+      },
+      {
+        "id": 169,
+        "name": "Majority Element",
+        "diff": "Easy",
+        "slug": "majority-element"
+      },
+      {
+        "id": 283,
+        "name": "Move Zeroes",
+        "diff": "Easy",
+        "slug": "move-zeroes"
+      },
+      {
+        "id": 1365,
+        "name": "How Many Smaller Than Current",
+        "diff": "Easy",
+        "slug": "how-many-numbers-are-smaller-than-the-current-number"
+      },
+      {
+        "id": 645,
+        "name": "Set Mismatch",
+        "diff": "Easy",
+        "slug": "set-mismatch"
+      },
+      {
+        "id": 1470,
+        "name": "Shuffle the Array",
+        "diff": "Easy",
+        "slug": "shuffle-the-array"
+      }
+    ]
+  },
+  {
+    "name": "Matrix",
+    "color": "#55efc4",
+    "problems": [
+      {
+        "id": 2033,
+        "name": "Uni-Value Grid",
+        "diff": "Medium",
+        "slug": "minimum-operations-to-make-a-uni-value-grid"
+      },
+      {
+        "id": 1727,
+        "name": "Largest Submatrix",
+        "diff": "Medium",
+        "slug": "largest-submatrix-with-rearrangements"
+      },
+      {
+        "id": 2906,
+        "name": "Construct Product Matrix",
+        "diff": "Medium",
+        "slug": "construct-product-matrix"
+      },
+      {
+        "id": 3070,
+        "name": "Count Submatrices",
+        "diff": "Medium",
+        "slug": "count-submatrices-with-top-left-element-and-sum-less-than-k"
+      },
+      {
+        "id": 289,
+        "name": "Game of Life",
+        "diff": "Medium",
+        "slug": "game-of-life"
+      },
+      {
+        "id": 2075,
+        "name": "Decode Slanted Ciphertext",
+        "diff": "Medium",
+        "slug": "decode-the-slanted-ciphertext"
+      },
+      {
+        "id": 498,
+        "name": "Diagonal Traverse",
+        "diff": "Medium",
+        "slug": "diagonal-traverse"
+      },
+      {
+        "id": 59,
+        "name": "Spiral Matrix II",
+        "diff": "Medium",
+        "slug": "spiral-matrix-ii"
+      },
+      {
+        "id": 54,
+        "name": "Spiral Matrix",
+        "diff": "Medium",
+        "slug": "spiral-matrix"
+      },
+      {
+        "id": 566,
+        "name": "Reshape the Matrix",
+        "diff": "Easy",
+        "slug": "reshape-the-matrix"
+      },
+      {
+        "id": 1572,
+        "name": "Matrix Diagonal Sum",
+        "diff": "Easy",
+        "slug": "matrix-diagonal-sum"
+      },
+      {
+        "id": 3643,
+        "name": "Flip Square Submatrix Vertically",
+        "diff": "Easy",
+        "slug": "flip-square-submatrix-vertically"
+      },
+      {
+        "id": 1886,
+        "name": "Matrix Rotation Check",
+        "diff": "Easy",
+        "slug": "determine-whether-matrix-can-be-obtained-by-rotation"
+      },
+      {
+        "id": 73,
+        "name": "Set Matrix Zeroes",
+        "diff": "Medium",
+        "slug": "set-matrix-zeroes"
+      },
+      {
+        "id": 3446,
+        "name": "Sort Matrix by Diagonals",
+        "diff": "Medium",
+        "slug": "sort-matrix-by-diagonals"
+      },
+      {
+        "id": 1329,
+        "name": "Sort Matrix Diagonally",
+        "diff": "Medium",
+        "slug": "sort-the-matrix-diagonally"
+      },
+      {
+        "id": 3567,
+        "name": "Min Absolute Diff Sliding Submatrix",
+        "diff": "Medium",
+        "slug": "minimum-absolute-difference-in-sliding-submatrix"
+      },
+      {
+        "id": 3546,
+        "name": "Equal Sum Grid Partition I",
+        "diff": "Medium",
+        "slug": "equal-sum-grid-partition-i"
+      },
+      {
+        "id": 3548,
+        "name": "Equal Sum Grid Partition II",
+        "diff": "Hard",
+        "slug": "equal-sum-grid-partition-ii"
+      },
+      {
+        "id": 2946,
+        "name": "Matrix Similarity Cyclic Shifts",
+        "diff": "Easy",
+        "slug": "matrix-similarity-after-cyclic-shifts"
+      }
+    ]
+  },
+  {
+    "name": "Backtracking",
+    "color": "#e17055",
+    "problems": [
+      {
+        "id": 51,
+        "name": "N-Queens",
+        "diff": "Hard",
+        "slug": "n-queens"
+      },
+      {
+        "id": 78,
+        "name": "Subsets",
+        "diff": "Medium",
+        "slug": "subsets"
+      },
+      {
+        "id": 39,
+        "name": "Combination Sum",
+        "diff": "Medium",
+        "slug": "combination-sum"
+      }
+    ]
+  },
+  {
+    "name": "Graphs",
+    "color": "#0984e3",
+    "problems": [
+      {
+        "id": 3742,
+        "name": "Maximum Path Score Grid",
+        "diff": "Medium",
+        "slug": "maximum-path-score-in-a-grid"
+      },
+      {
+        "id": 1391,
+        "name": "Valid Path in Grid",
+        "diff": "Medium",
+        "slug": "check-if-there-is-a-valid-path-in-a-grid"
+      },
+      {
+        "id": 1559,
+        "name": "Detect Cycles 2D Grid",
+        "diff": "Medium",
+        "slug": "detect-cycles-in-2d-grid"
+      },
+      {
+        "id": 1722,
+        "name": "Min Hamming Distance",
+        "diff": "Medium",
+        "slug": "minimize-hamming-distance-after-swap-operations"
+      },
+      {
+        "id": 787,
+        "name": "Cheapest Flights K Stops",
+        "diff": "Medium",
+        "slug": "cheapest-flights-within-k-stops"
+      },
+      {
+        "id": 743,
+        "name": "Network Delay Time",
+        "diff": "Medium",
+        "slug": "network-delay-time"
+      },
+      {
+        "id": 3661,
+        "name": "Max Walls Destroyed by Robots",
+        "diff": "Hard",
+        "slug": "maximum-walls-destroyed-by-robots"
+      }
+    ]
+  },
+  {
+    "name": "Greedy",
+    "color": "#6ab04c",
+    "problems": [
+      {
+        "id": 2279,
+        "name": "Max Bags Full Capacity",
+        "diff": "Medium",
+        "slug": "maximum-bags-with-full-capacity-of-rocks"
+      },
+      {
+        "id": 45,
+        "name": "Jump Game II",
+        "diff": "Medium",
+        "slug": "jump-game-ii"
+      },
+      {
+        "id": 55,
+        "name": "Jump Game",
+        "diff": "Medium",
+        "slug": "jump-game"
+      },
+      {
+        "id": 3892,
+        "name": "Min Ops Achieve K Peaks",
+        "diff": "Hard",
+        "slug": "minimum-operations-to-achieve-at-least-k-peaks"
+      },
+      {
+        "id": 3891,
+        "name": "Minimum Increase Special Indices",
+        "diff": "Medium",
+        "slug": "minimum-increase-to-maximize-special-indices"
+      },
+      {
+        "id": 1578,
+        "name": "Min Time Rope Colorful",
+        "diff": "Medium",
+        "slug": "minimum-time-to-make-rope-colorful"
+      }
+    ]
+  },
+  {
+    "name": "Heap",
+    "color": "#be2edd",
+    "problems": [
+      {
+        "id": 295,
+        "name": "Find Median Data Stream",
+        "diff": "Hard",
+        "slug": "find-median-from-data-stream"
+      },
+      {
+        "id": 703,
+        "name": "Kth Largest in Stream",
+        "diff": "Easy",
+        "slug": "kth-largest-element-in-a-stream"
+      },
+      {
+        "id": 215,
+        "name": "Kth Largest in Array",
+        "diff": "Medium",
+        "slug": "kth-largest-element-in-an-array"
+      }
+    ]
+  },
+  {
+    "name": "Hash Map",
+    "color": "#d63031",
+    "problems": [
+      {
+        "id": 205,
+        "name": "Isomorphic Strings",
+        "diff": "Easy",
+        "slug": "isomorphic-strings"
+      },
+      {
+        "id": 290,
+        "name": "Word Pattern",
+        "diff": "Easy",
+        "slug": "word-pattern"
+      },
+      {
+        "id": 49,
+        "name": "Group Anagrams",
+        "diff": "Medium",
+        "slug": "group-anagrams"
+      },
+      {
+        "id": 1748,
+        "name": "Sum of Unique Elements",
+        "diff": "Easy",
+        "slug": "sum-of-unique-elements"
+      },
+      {
+        "id": 575,
+        "name": "Distribute Candies",
+        "diff": "Easy",
+        "slug": "distribute-candies"
+      },
+      {
+        "id": 383,
+        "name": "Ransom Note",
+        "diff": "Easy",
+        "slug": "ransom-note"
+      },
+      {
+        "id": 1436,
+        "name": "Destination City",
+        "diff": "Easy",
+        "slug": "destination-city"
+      },
+      {
+        "id": 242,
+        "name": "Valid Anagram",
+        "diff": "Easy",
+        "slug": "valid-anagram"
+      },
+      {
+        "id": 387,
+        "name": "First Unique Character",
+        "diff": "Easy",
+        "slug": "first-unique-character-in-a-string"
+      },
+      {
+        "id": 771,
+        "name": "Jewels and Stones",
+        "diff": "Easy",
+        "slug": "jewels-and-stones"
+      }
+    ]
+  },
+  {
+    "name": "Stack",
+    "color": "#e84393",
+    "problems": [
+      {
+        "id": 155,
+        "name": "Min Stack",
+        "diff": "Medium",
+        "slug": "min-stack"
+      },
+      {
+        "id": 2751,
+        "name": "Robot Collisions",
+        "diff": "Hard",
+        "slug": "robot-collisions"
+      }
+    ]
+  },
+  {
+    "name": "Bit Manipulation",
+    "color": "#636e72",
+    "problems": [
+      {
+        "id": 338,
+        "name": "Counting Bits",
+        "diff": "Easy",
+        "slug": "counting-bits"
+      },
+      {
+        "id": 268,
+        "name": "Missing Number",
+        "diff": "Easy",
+        "slug": "missing-number"
+      },
+      {
+        "id": 287,
+        "name": "Find Duplicate Number",
+        "diff": "Medium",
+        "slug": "find-the-duplicate-number"
+      },
+      {
+        "id": 29,
+        "name": "Divide Two Integers",
+        "diff": "Medium",
+        "slug": "divide-two-integers"
+      },
+      {
+        "id": 7,
+        "name": "Reverse Integer",
+        "diff": "Medium",
+        "slug": "reverse-integer"
+      },
+      {
+        "id": 191,
+        "name": "Number of 1 Bits",
+        "diff": "Easy",
+        "slug": "number-of-1-bits"
+      },
+      {
+        "id": 137,
+        "name": "Single Number II",
+        "diff": "Medium",
+        "slug": "single-number-ii"
+      },
+      {
+        "id": 389,
+        "name": "Find the Difference",
+        "diff": "Easy",
+        "slug": "find-the-difference"
+      },
+      {
+        "id": 136,
+        "name": "Single Number",
+        "diff": "Easy",
+        "slug": "single-number"
+      },
+      {
+        "id": 401,
+        "name": "Binary Watch",
+        "diff": "Easy",
+        "slug": "binary-watch"
+      },
+      {
+        "id": 3655,
+        "name": "XOR After Range Mult II",
+        "diff": "Hard",
+        "slug": "xor-after-range-multiplication-queries-ii"
+      },
+      {
+        "id": 3653,
+        "name": "XOR After Range Mult I",
+        "diff": "Medium",
+        "slug": "xor-after-range-multiplication-queries-i"
+      },
+      {
+        "id": 693,
+        "name": "Binary Alternating Bits",
+        "diff": "Easy",
+        "slug": "binary-number-with-alternating-bits"
+      }
+    ]
+  },
+  {
+    "name": "Strings",
+    "color": "#00cec9",
+    "problems": [
+      {
+        "id": 796,
+        "name": "Rotate String",
+        "diff": "Easy",
+        "slug": "rotate-string"
+      },
+      {
+        "id": 2452,
+        "name": "Words Within Two Edits",
+        "diff": "Medium",
+        "slug": "words-within-two-edits-of-dictionary"
+      },
+      {
+        "id": 214,
+        "name": "Shortest Palindrome",
+        "diff": "Hard",
+        "slug": "shortest-palindrome"
+      },
+      {
+        "id": 409,
+        "name": "Longest Palindrome",
+        "diff": "Easy",
+        "slug": "longest-palindrome"
+      },
+      {
+        "id": 1832,
+        "name": "Check Pangram",
+        "diff": "Easy",
+        "slug": "check-if-the-sentence-is-pangram"
+      },
+      {
+        "id": 345,
+        "name": "Reverse Vowels of a String",
+        "diff": "Easy",
+        "slug": "reverse-vowels-of-a-string"
+      },
+      {
+        "id": 1684,
+        "name": "Count Consistent Strings",
+        "diff": "Easy",
+        "slug": "count-the-number-of-consistent-strings"
+      },
+      {
+        "id": 804,
+        "name": "Unique Morse Code Words",
+        "diff": "Easy",
+        "slug": "unique-morse-code-words"
+      },
+      {
+        "id": 541,
+        "name": "Reverse String II",
+        "diff": "Easy",
+        "slug": "reverse-string-ii"
+      },
+      {
+        "id": 344,
+        "name": "Reverse String",
+        "diff": "Easy",
+        "slug": "reverse-string"
+      },
+      {
+        "id": 680,
+        "name": "Valid Palindrome II",
+        "diff": "Easy",
+        "slug": "valid-palindrome-ii"
+      },
+      {
+        "id": 125,
+        "name": "Valid Palindrome",
+        "diff": "Easy",
+        "slug": "valid-palindrome"
+      },
+      {
+        "id": 9,
+        "name": "Palindrome Number",
+        "diff": "Easy",
+        "slug": "palindrome-number"
+      },
+      {
+        "id": 3474,
+        "name": "Lexicographically Smallest Generated",
+        "diff": "Hard",
+        "slug": "lexicographically-smallest-generated-string"
+      },
+      {
+        "id": 2840,
+        "name": "Check Strings Equal Ops II",
+        "diff": "Medium",
+        "slug": "check-if-strings-can-be-made-equal-with-operations-ii"
+      },
+      {
+        "id": 2573,
+        "name": "Find the String with LCP",
+        "diff": "Hard",
+        "slug": "find-the-string-with-lcp"
+      },
+      {
+        "id": 2839,
+        "name": "Check Strings Equal Ops I",
+        "diff": "Easy",
+        "slug": "check-if-strings-can-be-made-equal-with-operations-i"
+      }
+    ]
+  },
+  {
+    "name": "Design",
+    "color": "#b2bec3",
+    "problems": [
+      {
+        "id": 706,
+        "name": "Design HashMap",
+        "diff": "Easy",
+        "slug": "design-hashmap"
+      },
+      {
+        "id": 705,
+        "name": "Design HashSet",
+        "diff": "Easy",
+        "slug": "design-hashset"
+      },
+      {
+        "id": 36,
+        "name": "Valid Sudoku",
+        "diff": "Medium",
+        "slug": "valid-sudoku"
+      }
+    ]
+  },
+  {
+    "name": "Math / Simulation",
+    "color": "#fdcb6e",
+    "problems": [
+      {
+        "id": 788,
+        "name": "Rotated Digits",
+        "diff": "Medium",
+        "slug": "rotated-digits"
+      },
+      {
+        "id": 396,
+        "name": "Rotate Function",
+        "diff": "Medium",
+        "slug": "rotate-function"
+      },
+      {
+        "id": 3464,
+        "name": "Maximize Distance Points Square",
+        "diff": "Hard",
+        "slug": "maximize-the-distance-between-points-on-a-square"
+      },
+      {
+        "id": 2833,
+        "name": "Furthest Point From Origin",
+        "diff": "Easy",
+        "slug": "furthest-point-from-origin"
+      },
+      {
+        "id": 3783,
+        "name": "Mirror Distance of Integer",
+        "diff": "Easy",
+        "slug": "mirror-distance-of-an-integer"
+      },
+      {
+        "id": 3761,
+        "name": "Min Absolute Dist Mirror Pairs",
+        "diff": "Medium",
+        "slug": "minimum-absolute-distance-between-mirror-pairs"
+      },
+      {
+        "id": 2069,
+        "name": "Walking Robot Simulation II",
+        "diff": "Medium",
+        "slug": "walking-robot-simulation-ii"
+      },
+      {
+        "id": 3803,
+        "name": "Count Residue Prefixes",
+        "diff": "Easy",
+        "slug": "count-residue-prefixes"
+      },
+      {
+        "id": 874,
+        "name": "Walking Robot Simulation",
+        "diff": "Medium",
+        "slug": "walking-robot-simulation"
+      },
+      {
+        "id": 3890,
+        "name": "Integers Multiple Sum Two Cubes",
+        "diff": "Medium",
+        "slug": "integers-with-multiple-sum-of-two-cubes"
+      },
+      {
+        "id": 3889,
+        "name": "Mirror Frequency Distance",
+        "diff": "Medium",
+        "slug": "mirror-frequency-distance"
+      },
+      {
+        "id": 657,
+        "name": "Robot Return to Origin",
+        "diff": "Easy",
+        "slug": "robot-return-to-origin"
+      },
+      {
+        "id": 189,
+        "name": "Rotate Array",
+        "diff": "Medium",
+        "slug": "rotate-array"
+      }
     ]
   }
 ]
