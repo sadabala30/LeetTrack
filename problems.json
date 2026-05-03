@@ -260,6 +260,12 @@
         "name": "Amount of Time for Binary Tree to Be Infected",
         "diff": "Medium",
         "slug": "amount-of-time-for-binary-tree-to-be-infected/description"
+      },
+      {
+        "id": 129,
+        "name": "Sum Root to Leaf Numbers",
+        "diff": "Medium",
+        "slug": "sum-root-to-leaf-numbers/description"
       }
     ]
   },
