@@ -213,6 +213,9 @@ select.form-input option{background:var(--s2)}
     <div class="stat-chip" style="color:var(--med)">Med <b id="s-med">0</b></div>
     <div class="stat-chip" style="color:var(--hard)">Hard <b id="s-hard">0</b></div>
     <div class="stat-chip" style="color:var(--acc)">✓ Solved <b id="s-solved">0</b></div>
+    <button onclick="openSettings()" class="sync-btn" style="background: var(--s3); border-color: var(--border2);">
+      <span>⚙️</span> Settings
+    </button>
     <button class="sync-btn" id="sync-btn" onclick="manualSync()" title="Sync with Google Drive">
       <span class="sync-icon" id="sync-icon">☁</span>
       <span id="sync-label">Drive</span>
@@ -972,10 +975,10 @@ function confirmAdd() {
   const diff = document.getElementById('add-diff').value;
   const slug = document.getElementById('add-slug').value.trim().replace(/^\/|\/$/g,'').replace('https://leetcode.com/problems/','');
   let patName = document.getElementById('add-pat').value;
+  
   if(!id||!name||!slug) { alert('Please fill in all fields!'); return; }
 
   if(patName === '__new__') {
-    // Create new category
     const newName = document.getElementById('new-cat-name').value.trim();
     const newColor = document.getElementById('new-cat-color').value;
     if(!newName) { alert('Please enter a category name!'); return; }
@@ -986,7 +989,12 @@ function confirmAdd() {
 
   const p = patterns.find(x=>x.name===patName);
   if(p) { p.problems.push({id,name,diff,slug}); }
-  save();
+
+  // --- THE NEW AUTOMATION CALL ---
+  pushToGitHub(patterns); 
+  // -------------------------------
+
+  save(); // Saves to local/Drive
   closeAdd();
   renderSidebar();
   renderContent();
@@ -996,12 +1004,98 @@ function confirmAdd() {
 // ═══════════════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════════════
-load();
-renderSidebar();
-renderContent();
-updateStats();
-</script>
+// --- GITHUB AUTO-SYNC LOGIC ---
+async function pushToGitHub(updatedPatterns) {
+    const GITHUB_TOKEN = localStorage.getItem('gh_token');
+    const REPO_OWNER = 'sadabala30';
+    const REPO_NAME = 'LeetTrack';
+    const FILE_PATH = 'problems.json';
 
+    if (!GITHUB_TOKEN) return; // Silent return if no token set
+
+    try {
+        const getFileResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`);
+        const fileData = await getFileResponse.json();
+        const sha = fileData.sha;
+        const content = btoa(unescape(encodeURIComponent(JSON.stringify(updatedPatterns, null, 2))));
+
+        await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                message: `Auto-update: ${new Date().toLocaleString()}`,
+                content: content,
+                sha: sha
+            })
+        });
+        console.log("Public problems.json updated!");
+    } catch (e) { console.error("GitHub Sync Error:", e); }
+}
+
+// --- SETTINGS UI LOGIC ---
+function openSettings() {
+    const savedToken = localStorage.getItem('gh_token');
+    if (savedToken) document.getElementById('ghTokenInput').value = savedToken;
+    document.getElementById('settingsModal').classList.add('open');
+}
+
+function closeSettings() { document.getElementById('settingsModal').classList.remove('open'); }
+
+function saveSettings() {
+    const token = document.getElementById('ghTokenInput').value.trim();
+    if (token) {
+        localStorage.setItem('gh_token', token);
+        alert("GitHub Token saved locally!");
+        closeSettings();
+    }
+}
+
+// ... existing UI logic ...
+
+// --- UPDATED INIT ---
+async function load() {
+    // 1. Fetch Public Problems from GitHub
+    try {
+        const resp = await fetch('https://sadabala30.github.io/LeetTrack/problems.json');
+        patterns = await resp.json();
+    } catch (e) { 
+        console.log("Using defaults..."); 
+        patterns = JSON.parse(JSON.stringify(DEFAULT_PATTERNS)); 
+    }
+
+    // 2. Load Local Data (Notes and Solved Status)
+    try { notes = JSON.parse(localStorage.getItem('lt-notes')) || {}; } catch { notes = {}; }
+    try { solved = new Set(JSON.parse(localStorage.getItem('lt-solved')) || []); } catch { solved = new Set(); }
+
+    // 3. Render the UI once the data is ready
+    renderSidebar();
+    renderContent();
+    updateStats();
+}
+
+// Start the sequence
+load(); 
+</script>
+<!-- SETTINGS MODAL -->
+<div id="settingsModal" class="modal-bg">
+    <div class="modal">
+        <div class="modal-head">
+            <h3 class="modal-title">GitHub Automation Config</h3>
+            <button class="modal-x" onclick="closeSettings()">×</button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label class="form-label">Personal Access Token</label>
+                <input type="password" id="ghTokenInput" class="form-input" placeholder="ghp_xxxxxxxxxxxx">
+                <div class="form-hint">Stored locally for auto-updates to problems.json.</div>
+            </div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn-cancel" onclick="closeSettings()">Cancel</button>
+            <button class="btn-confirm" onclick="saveSettings()">Save Configuration</button>
+        </div>
+    </div>
+</div>
 <!-- Google APIs for Drive sync -->
 <script src="https://apis.google.com/js/api.js"></script>
 <script src="https://accounts.google.com/gsi/client" onload="initGapi()"></script>
