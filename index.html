@@ -651,17 +651,18 @@ async function initGapi() {
       await syncFromDrive();
     }
   });
-  // Try silent token refresh first
+
   const stored = localStorage.getItem('lt-goog-token');
   if(stored) {
     try {
       const t = JSON.parse(stored);
+      // If token is still valid, set it and sync immediately
       if(Date.now() < t.expires_at - 60000) {
         gapi.client.setToken(t);
-        await syncFromDrive();
+        await syncFromDrive(); // This is the "Auto-Load" part
         return;
       }
-    } catch {}
+    } catch(e) { console.error("Token error", e); }
   }
   setSyncState('', 'Connect Drive');
 }
@@ -772,12 +773,20 @@ function load() {
 }
 
 function save() {
-  // Always write to localStorage immediately (fast)
+  // 1. Save to LocalStorage immediately for instant local UI feedback
   localStorage.setItem('lt-patterns', JSON.stringify(patterns));
   localStorage.setItem('lt-notes',    JSON.stringify(notes));
   localStorage.setItem('lt-solved',   JSON.stringify([...solved]));
-  // Then debounce a Drive write
-  scheduleDriveWrite();
+
+  // 2. Automated Sync Check
+  const tok = gapi.client.getToken();
+  if (tok) {
+    // If we are logged in, automatically push to Drive after the 1.5s delay
+    scheduleDriveWrite();
+  } else {
+    // If not logged in, just show a reminder on the button
+    setSyncState('', 'Drive (Not Synced)');
+  }
 }
 
 // ═══════════════════════════════════════════════
@@ -927,12 +936,11 @@ function saveNote(id) {
     note: document.getElementById('note-text-'+id).value,
     cheat: document.getElementById('note-cheat-'+id).value,
   };
-  save();
+  save(); // This now triggers the automated scheduleDriveWrite()
   const el = document.getElementById('saved-'+id);
   el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'), 2000);
 }
-
 // ═══════════════════════════════════════════════
 //  ADD PROBLEM MODAL
 // ═══════════════════════════════════════════════
