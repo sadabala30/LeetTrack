@@ -926,6 +926,12 @@
         "name": "Matrix Similarity Cyclic Shifts",
         "diff": "Easy",
         "slug": "matrix-similarity-after-cyclic-shifts"
+      },
+      {
+        "id": 48,
+        "name": "Rotate Image",
+        "diff": "Medium",
+        "slug": "rotate-image/description"
       }
     ]
   },
